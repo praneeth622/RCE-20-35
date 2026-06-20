@@ -21,7 +21,7 @@ OVERLAP = 40
 WEIGHT_DENSE = 0.6
 WEIGHT_SPARSE = 0.4
 TOP_K = 6
-ABSTAIN_THRESHOLD = 0.95
+ABSTAIN_THRESHOLD = 0.85
 
 def chunk_text(text, doc_id, chunk_size=220, overlap=40):
     words = text.split()
