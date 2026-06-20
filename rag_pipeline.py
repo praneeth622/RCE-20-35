@@ -11,11 +11,11 @@ import numpy as np
 import faiss
 from sentence_transformers import SentenceTransformer
 from rank_bm25 import BM25Okapi
-import google.generativeai as genai
+from groq import Groq
 
 INDEX_DIR = "./index"
 MODEL_NAME = "all-MiniLM-L6-v2"
-GEMINI_MODEL = "gemini-2.0-flash"
+GROQ_MODEL = "llama-3.1-8b-instant"
 CHUNK_SIZE = 220
 OVERLAP = 40
 WEIGHT_DENSE = 0.6
@@ -126,9 +126,9 @@ def retrieve(query):
     return results
 
 def process_ask(question):
-    if "GOOGLE_API_KEY" not in os.environ:
-        raise ValueError("GOOGLE_API_KEY environment variable not set.")
-    genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
+    if "GROQ_API_KEY" not in os.environ:
+        raise ValueError("GROQ_API_KEY environment variable not set.")
+    client = Groq(api_key=os.environ["GROQ_API_KEY"])
         
     try:
         results = retrieve(question)
@@ -165,23 +165,26 @@ def process_ask(question):
         "If the passages don't contain the answer, output exactly 'I cannot answer this from the provided documents.' instead of guessing."
     )
     
-    model = genai.GenerativeModel(
-        model_name=GEMINI_MODEL,
-        system_instruction=system_prompt
-    )
-    
-    prompt = f"Context:\n{context}\n\nQuestion: {question}"
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": f"Context:\n{context}\n\nQuestion: {question}"}
+    ]
     
     max_retries = 3
-    response = None
+    response_content = None
     for attempt in range(max_retries):
         try:
-            response = model.generate_content(prompt)
+            response = client.chat.completions.create(
+                model=GROQ_MODEL,
+                messages=messages,
+                temperature=0.0
+            )
+            response_content = response.choices[0].message.content
             break
         except Exception as e:
             error_str = str(e)
             print(f"EXCEPTION: Type: {type(e)}, Message: {error_str}")
-            if "429" in error_str or "ResourceExhausted" in error_str or "quota" in error_str.lower():
+            if "429" in error_str or "ResourceExhausted" in error_str or "quota" in error_str.lower() or "rate" in error_str.lower():
                 if attempt < max_retries - 1:
                     time.sleep(20)
                 else:
@@ -198,7 +201,7 @@ def process_ask(question):
                 raise e
                 
     try:
-        answer = response.text
+        answer = response_content
     except ValueError:
         # Handle edgecase where response is blocked by safety filters
         answer = "I cannot answer this from the provided documents."
