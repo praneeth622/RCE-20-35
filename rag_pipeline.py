@@ -180,6 +180,7 @@ def process_ask(question):
             break
         except Exception as e:
             error_str = str(e)
+            print(f"EXCEPTION: Type: {type(e)}, Message: {error_str}")
             if "429" in error_str or "ResourceExhausted" in error_str or "quota" in error_str.lower():
                 if attempt < max_retries - 1:
                     time.sleep(20)
