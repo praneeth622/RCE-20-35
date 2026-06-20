@@ -1,60 +1,23 @@
 [
   {
     "question": "What is the policy for medical examination of a person found fit for grant of commission?",
-    "answer": "Generation failed due to API quota limits.",
-    "citations": [],
-    "abstained_flag": false,
-    "abstained": false,
-    "reason": "quota_exceeded",
-    "retrieved_doc_ids": [
-      "page_018.txt",
-      "page_017.txt",
-      "page_016.txt",
-      "page_011.txt"
-    ],
-    "fused_scores": [
-      1.0,
-      0.9228052228234002,
-      0.8268884620798668,
-      0.8239553289138302,
-      0.7560396071805412,
-      0.719011940318618
-    ]
+    "error": "400 API key expired. Please renew the API key. [reason: \"API_KEY_INVALID\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"generativelanguage.googleapis.com\"\n}\n, locale: \"en-US\"\nmessage: \"API key expired. Please renew the API key.\"\n]"
   },
   {
     "question": "Who is responsible for verifying the antecedents of a person found fit for enrollment?",
-    "answer": "Generation failed due to API quota limits.",
-    "citations": [],
-    "abstained_flag": false,
-    "abstained": false,
-    "reason": "quota_exceeded",
-    "retrieved_doc_ids": [
-      "page_010.txt",
-      "page_011.txt",
-      "page_026.txt"
-    ],
-    "fused_scores": [
-      1.0,
-      0.9079144165719605,
-      0.791754230165828,
-      0.7739142493694442,
-      0.759058957426089,
-      0.719536378353888
-    ]
+    "error": "400 API key expired. Please renew the API key. [reason: \"API_KEY_INVALID\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"generativelanguage.googleapis.com\"\n}\n, locale: \"en-US\"\nmessage: \"API key expired. Please renew the API key.\"\n]"
   },
   {
     "question": "What happens if someone is dismissed from the Army, Navy or Air Force?",
-    "answer": "Generation failed due to API quota limits.",
+    "answer": "I cannot answer this from the provided documents.",
     "citations": [],
-    "abstained_flag": false,
-    "abstained": false,
-    "reason": "quota_exceeded",
+    "abstained_flag": true,
     "retrieved_doc_ids": [
-      "page_079.txt",
       "page_027.txt",
+      "page_079.txt",
       "page_011.txt",
-      "page_022.txt",
-      "page_028.txt"
+      "page_028.txt",
+      "page_022.txt"
     ],
     "fused_scores": [
       0.7858949062143908,
@@ -67,17 +30,15 @@
   },
   {
     "question": "What is the capital of France?",
-    "answer": "Generation failed due to API quota limits.",
+    "answer": "I cannot answer this from the provided documents.",
     "citations": [],
-    "abstained_flag": false,
-    "abstained": false,
-    "reason": "quota_exceeded",
+    "abstained_flag": true,
     "retrieved_doc_ids": [
-      "page_078.txt",
-      "page_075.txt",
+      "page_029.txt",
       "page_071.txt",
+      "page_078.txt",
       "page_037.txt",
-      "page_029.txt"
+      "page_075.txt"
     ],
     "fused_scores": [
       0.7443802214707257,
@@ -90,25 +51,6 @@
   },
   {
     "question": "Can the Central Government relax the conditions of enrollment for special reasons?",
-    "answer": "Generation failed due to API quota limits.",
-    "citations": [],
-    "abstained_flag": false,
-    "abstained": false,
-    "reason": "quota_exceeded",
-    "retrieved_doc_ids": [
-      "page_026.txt",
-      "page_027.txt",
-      "page_061.txt",
-      "page_011.txt",
-      "page_010.txt"
-    ],
-    "fused_scores": [
-      1.0,
-      0.7649589654884926,
-      0.6797926769508802,
-      0.6587487767676774,
-      0.6551308727706289,
-      0.6301667565806688
-    ]
+    "error": "400 API key expired. Please renew the API key. [reason: \"API_KEY_INVALID\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"generativelanguage.googleapis.com\"\n}\n, locale: \"en-US\"\nmessage: \"API key expired. Please renew the API key.\"\n]"
   }
 ]
