@@ -1,0 +1,110 @@
+[
+  {
+    "question": "What is the policy for medical examination of a person found fit for grant of commission?",
+    "answer": "According to regulation 12 in page_011.txt, a person found fit for grant of Commission or for enrolment shall be required to present himself for medical examination at a time and place to be specified in this behalf. [SOURCE: page_011.txt]",
+    "citations": [
+      "page_011.txt"
+    ],
+    "abstained_flag": false,
+    "retrieved_doc_ids": [
+      "page_018.txt",
+      "page_017.txt",
+      "page_011.txt",
+      "page_016.txt"
+    ],
+    "fused_scores": [
+      1.0,
+      0.9228052228234002,
+      0.8268884620798668,
+      0.8239553289138302,
+      0.7560396071805412,
+      0.719011940318618
+    ]
+  },
+  {
+    "question": "Who is responsible for verifying the antecedents of a person found fit for enrollment?",
+    "answer": "The antecedents of the person found fit for grant of Commission or for enrolment shall be verified from the Police authorities of his area. [SOURCE: page_011.txt]",
+    "citations": [
+      "page_011.txt"
+    ],
+    "abstained_flag": false,
+    "retrieved_doc_ids": [
+      "page_010.txt",
+      "page_011.txt",
+      "page_026.txt"
+    ],
+    "fused_scores": [
+      1.0,
+      0.9079144165719605,
+      0.791754230165828,
+      0.7739142493694442,
+      0.759058957426089,
+      0.719536378353888
+    ]
+  },
+  {
+    "question": "What happens if someone is dismissed from the Army, Navy or Air Force?",
+    "answer": "I cannot answer this from the provided documents.",
+    "citations": [],
+    "abstained_flag": true,
+    "retrieved_doc_ids": [
+      "page_079.txt",
+      "page_011.txt",
+      "page_027.txt",
+      "page_022.txt",
+      "page_028.txt"
+    ],
+    "fused_scores": [
+      0.7858949062143908,
+      0.7853502842378435,
+      0.7657257107123527,
+      0.7596369178040423,
+      0.7578190312590734,
+      0.7355045339375756
+    ]
+  },
+  {
+    "question": "What is the capital of France?",
+    "answer": "I cannot answer this from the provided documents.",
+    "citations": [],
+    "abstained_flag": true,
+    "retrieved_doc_ids": [
+      "page_029.txt",
+      "page_075.txt",
+      "page_078.txt",
+      "page_071.txt",
+      "page_037.txt"
+    ],
+    "fused_scores": [
+      0.7443802214707257,
+      0.7218974302821132,
+      0.6489595470615195,
+      0.5916671875129722,
+      0.5906362391263285,
+      0.5819040914505823
+    ]
+  },
+  {
+    "question": "Can the Central Government relax the conditions of enrollment for special reasons?",
+    "answer": "Yes, the Central Government may relax the conditions specified in clause (d) in respect of any establishments for special reasons [SOURCE: page_011.txt].",
+    "citations": [
+      "page_011.txt"
+    ],
+    "abstained_flag": false,
+    "retrieved_doc_ids": [
+      "page_011.txt",
+      "page_027.txt",
+      "page_010.txt",
+      "page_026.txt",
+      "page_061.txt"
+    ],
+    "fused_scores": [
+      1.0,
+      0.7649589654884926,
+      0.6797926769508802,
+      0.6587487767676774,
+      0.6551308727706289,
+      0.6301667565806688
+    ]
+  }
+]
