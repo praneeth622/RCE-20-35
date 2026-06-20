@@ -1,0 +1,92 @@
+[
+  {
+    "question": "Who verifies the antecedents of a person found fit for grant of commission or for enrolment in the Service?",
+    "gold_doc_ids": [
+      "page_011.txt"
+    ],
+    "gold_answer": "The antecedents are verified from the police authorities of the person's area.",
+    "answerable": true
+  },
+  {
+    "question": "What must a person found fit for grant of commission or for enrolment do for medical examination?",
+    "gold_doc_ids": [
+      "page_011.txt"
+    ],
+    "gold_answer": "The person must present himself for medical examination at the specified time and place.",
+    "answerable": true
+  },
+  {
+    "question": "Can the Central Government relax any enrolment condition for establishments?",
+    "gold_doc_ids": [
+      "page_011.txt"
+    ],
+    "gold_answer": "Yes. The Central Government may relax the condition in clause (d) in respect of establishments.",
+    "answerable": true
+  },
+  {
+    "question": "What happens if a person has been dismissed from the Army, Navy, Air Force, or any Reserve Forces of India?",
+    "gold_doc_ids": [
+      "page_011.txt"
+    ],
+    "gold_answer": "Such a person is not eligible for enrolment in the Service.",
+    "answerable": true
+  },
+  {
+    "question": "What branches does the Service comprise?",
+    "gold_doc_ids": [
+      "page_013.txt"
+    ],
+    "gold_answer": "The Service comprises the Executive, Engineering, Electrical, Medical, and Education Branches.",
+    "answerable": true
+  },
+  {
+    "question": "Except for the medical branch or honorary commission, in what rank are all new entrants for commission taken into the Service?",
+    "gold_doc_ids": [
+      "page_014.txt"
+    ],
+    "gold_answer": "They are taken in as Acting Sub-Lieutenants.",
+    "answerable": true
+  },
+  {
+    "question": "If an applicant is found unfit by the Medical Board, to whom may the applicant appeal and within what time?",
+    "gold_doc_ids": [
+      "page_017.txt"
+    ],
+    "gold_answer": "The applicant may appeal to the Secretary to the Government of India in the Ministry of Defence within a week of being informed of the result.",
+    "answerable": true
+  },
+  {
+    "question": "What should happen if a person offering himself for enrolment is suspected to be a deserter from Government service?",
+    "gold_doc_ids": [
+      "page_028.txt"
+    ],
+    "gold_answer": "The Commanding Officer or Officer-in-Charge should hand the person over to the Civil Police or to the proper authority of the Service to which he is supposed to belong if that authority claims him.",
+    "answerable": true
+  },
+  {
+    "question": "What must officers of the Service provide themselves with on being commissioned?",
+    "gold_doc_ids": [
+      "page_032.txt"
+    ],
+    "gold_answer": "They must provide themselves with their badges of rank and the uniform items specified in Schedule V.",
+    "answerable": true
+  },
+  {
+    "question": "What is the capital of France?",
+    "gold_doc_ids": [],
+    "gold_answer": "",
+    "answerable": false
+  },
+  {
+    "question": "How does photosynthesis convert sunlight into chemical energy in plants?",
+    "gold_doc_ids": [],
+    "gold_answer": "",
+    "answerable": false
+  },
+  {
+    "question": "What is Bitcoin's maximum supply?",
+    "gold_doc_ids": [],
+    "gold_answer": "",
+    "answerable": false
+  }
+]

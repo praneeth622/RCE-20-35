@@ -1,0 +1,499 @@
+{
+  "summary": {
+    "num_questions": 12,
+    "k": 6,
+    "run_generation": false,
+    "retrieval_mode": "bm25",
+    "recall_at_k": 0.8888888888888888,
+    "precision_at_k": 0.1111111111111111,
+    "mrr": 0.6666666666666666,
+    "answer_token_f1": 0.0,
+    "false_answer_rate": 0.0,
+    "false_abstain_rate": 1.0,
+    "citation_hallucination_rate": 0.0,
+    "answered_count": 0,
+    "generation_error_count": 0
+  },
+  "details": [
+    {
+      "question": "Who verifies the antecedents of a person found fit for grant of commission or for enrolment in the Service?",
+      "gold_doc_ids": [
+        "page_011.txt"
+      ],
+      "ranked_doc_ids": [
+        "page_011.txt",
+        "page_071.txt",
+        "page_021.txt",
+        "page_017.txt"
+      ],
+      "answerable": true,
+      "gold_answer": "The antecedents are verified from the police authorities of the person's area.",
+      "prediction": {
+        "answer": "",
+        "citations": [],
+        "retrieved_doc_ids": [
+          "page_011.txt",
+          "page_071.txt",
+          "page_021.txt",
+          "page_017.txt"
+        ],
+        "fused_scores": [
+          42.33067646741975,
+          40.1494304832335,
+          26.275628685696798,
+          26.18600847973479,
+          25.48142483674377,
+          25.282624969806506
+        ],
+        "abstained_flag": true
+      },
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.16666666666666666,
+      "reciprocal_rank": 1.0,
+      "token_f1": 0.0,
+      "answered": false,
+      "citations_used": []
+    },
+    {
+      "question": "What must a person found fit for grant of commission or for enrolment do for medical examination?",
+      "gold_doc_ids": [
+        "page_011.txt"
+      ],
+      "ranked_doc_ids": [
+        "page_011.txt",
+        "page_017.txt",
+        "page_079.txt",
+        "page_078.txt"
+      ],
+      "answerable": true,
+      "gold_answer": "The person must present himself for medical examination at the specified time and place.",
+      "prediction": {
+        "answer": "",
+        "citations": [],
+        "retrieved_doc_ids": [
+          "page_011.txt",
+          "page_017.txt",
+          "page_079.txt",
+          "page_078.txt"
+        ],
+        "fused_scores": [
+          36.551174484890616,
+          31.57356519715372,
+          21.7753425325809,
+          21.02414500282392,
+          20.539625909685952,
+          20.295658820743302
+        ],
+        "abstained_flag": true
+      },
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.16666666666666666,
+      "reciprocal_rank": 1.0,
+      "token_f1": 0.0,
+      "answered": false,
+      "citations_used": []
+    },
+    {
+      "question": "Can the Central Government relax any enrolment condition for establishments?",
+      "gold_doc_ids": [
+        "page_011.txt"
+      ],
+      "ranked_doc_ids": [
+        "page_011.txt",
+        "page_027.txt",
+        "page_010.txt",
+        "page_038.txt"
+      ],
+      "answerable": true,
+      "gold_answer": "Yes. The Central Government may relax the condition in clause (d) in respect of establishments.",
+      "prediction": {
+        "answer": "",
+        "citations": [],
+        "retrieved_doc_ids": [
+          "page_011.txt",
+          "page_027.txt",
+          "page_010.txt",
+          "page_038.txt"
+        ],
+        "fused_scores": [
+          19.2966793793851,
+          13.86546753744706,
+          12.93371500224619,
+          10.234307853189557,
+          9.82883152230984,
+          9.239396628298095
+        ],
+        "abstained_flag": true
+      },
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.16666666666666666,
+      "reciprocal_rank": 1.0,
+      "token_f1": 0.0,
+      "answered": false,
+      "citations_used": []
+    },
+    {
+      "question": "What happens if a person has been dismissed from the Army, Navy, Air Force, or any Reserve Forces of India?",
+      "gold_doc_ids": [
+        "page_011.txt"
+      ],
+      "ranked_doc_ids": [
+        "page_011.txt",
+        "page_079.txt",
+        "page_078.txt",
+        "page_028.txt",
+        "page_010.txt"
+      ],
+      "answerable": true,
+      "gold_answer": "Such a person is not eligible for enrolment in the Service.",
+      "prediction": {
+        "answer": "",
+        "citations": [],
+        "retrieved_doc_ids": [
+          "page_011.txt",
+          "page_079.txt",
+          "page_078.txt",
+          "page_028.txt",
+          "page_010.txt"
+        ],
+        "fused_scores": [
+          30.845681072732752,
+          27.598548926908936,
+          23.788205820389987,
+          21.591217710902743,
+          20.489080108600692,
+          19.777553449795658
+        ],
+        "abstained_flag": true
+      },
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.16666666666666666,
+      "reciprocal_rank": 1.0,
+      "token_f1": 0.0,
+      "answered": false,
+      "citations_used": []
+    },
+    {
+      "question": "What branches does the Service comprise?",
+      "gold_doc_ids": [
+        "page_013.txt"
+      ],
+      "ranked_doc_ids": [
+        "page_079.txt",
+        "page_078.txt",
+        "page_025.txt",
+        "page_014.txt",
+        "page_039.txt"
+      ],
+      "answerable": true,
+      "gold_answer": "The Service comprises the Executive, Engineering, Electrical, Medical, and Education Branches.",
+      "prediction": {
+        "answer": "",
+        "citations": [],
+        "retrieved_doc_ids": [
+          "page_079.txt",
+          "page_078.txt",
+          "page_025.txt",
+          "page_014.txt",
+          "page_039.txt"
+        ],
+        "fused_scores": [
+          11.784631454475457,
+          10.957603217880424,
+          8.227254190053882,
+          7.926428091086982,
+          7.593032130541654,
+          7.451325867386217
+        ],
+        "abstained_flag": true
+      },
+      "recall_at_k": 0.0,
+      "precision_at_k": 0.0,
+      "reciprocal_rank": 0.0,
+      "token_f1": 0.0,
+      "answered": false,
+      "citations_used": []
+    },
+    {
+      "question": "Except for the medical branch or honorary commission, in what rank are all new entrants for commission taken into the Service?",
+      "gold_doc_ids": [
+        "page_014.txt"
+      ],
+      "ranked_doc_ids": [
+        "page_014.txt",
+        "page_079.txt",
+        "page_020.txt",
+        "page_013.txt",
+        "page_017.txt"
+      ],
+      "answerable": true,
+      "gold_answer": "They are taken in as Acting Sub-Lieutenants.",
+      "prediction": {
+        "answer": "",
+        "citations": [],
+        "retrieved_doc_ids": [
+          "page_014.txt",
+          "page_079.txt",
+          "page_020.txt",
+          "page_013.txt",
+          "page_017.txt"
+        ],
+        "fused_scores": [
+          52.35243903876031,
+          35.961009904707495,
+          23.734448722128903,
+          23.504134270778724,
+          23.14193401903364,
+          21.241097724834383
+        ],
+        "abstained_flag": true
+      },
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.16666666666666666,
+      "reciprocal_rank": 1.0,
+      "token_f1": 0.0,
+      "answered": false,
+      "citations_used": []
+    },
+    {
+      "question": "If an applicant is found unfit by the Medical Board, to whom may the applicant appeal and within what time?",
+      "gold_doc_ids": [
+        "page_017.txt"
+      ],
+      "ranked_doc_ids": [
+        "page_017.txt",
+        "page_018.txt",
+        "page_026.txt",
+        "page_022.txt"
+      ],
+      "answerable": true,
+      "gold_answer": "The applicant may appeal to the Secretary to the Government of India in the Ministry of Defence within a week of being informed of the result.",
+      "prediction": {
+        "answer": "",
+        "citations": [],
+        "retrieved_doc_ids": [
+          "page_017.txt",
+          "page_018.txt",
+          "page_026.txt",
+          "page_022.txt"
+        ],
+        "fused_scores": [
+          39.049737366497666,
+          34.900939757192525,
+          27.71768885176863,
+          27.467622030755493,
+          24.42399940725034,
+          22.43993816309213
+        ],
+        "abstained_flag": true
+      },
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.16666666666666666,
+      "reciprocal_rank": 1.0,
+      "token_f1": 0.0,
+      "answered": false,
+      "citations_used": []
+    },
+    {
+      "question": "What should happen if a person offering himself for enrolment is suspected to be a deserter from Government service?",
+      "gold_doc_ids": [
+        "page_028.txt"
+      ],
+      "ranked_doc_ids": [
+        "page_028.txt",
+        "page_078.txt",
+        "page_011.txt",
+        "page_079.txt",
+        "page_071.txt"
+      ],
+      "answerable": true,
+      "gold_answer": "The Commanding Officer or Officer-in-Charge should hand the person over to the Civil Police or to the proper authority of the Service to which he is supposed to belong if that authority claims him.",
+      "prediction": {
+        "answer": "",
+        "citations": [],
+        "retrieved_doc_ids": [
+          "page_028.txt",
+          "page_078.txt",
+          "page_011.txt",
+          "page_079.txt",
+          "page_071.txt"
+        ],
+        "fused_scores": [
+          33.04249652025866,
+          27.29468487186989,
+          23.93584419115899,
+          23.21787747657962,
+          21.044242108424495,
+          20.544884875028252
+        ],
+        "abstained_flag": true
+      },
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.16666666666666666,
+      "reciprocal_rank": 1.0,
+      "token_f1": 0.0,
+      "answered": false,
+      "citations_used": []
+    },
+    {
+      "question": "What must officers of the Service provide themselves with on being commissioned?",
+      "gold_doc_ids": [
+        "page_032.txt"
+      ],
+      "ranked_doc_ids": [
+        "page_032.txt",
+        "page_079.txt",
+        "page_068.txt",
+        "page_069.txt",
+        "page_039.txt",
+        "page_078.txt"
+      ],
+      "answerable": true,
+      "gold_answer": "They must provide themselves with their badges of rank and the uniform items specified in Schedule V.",
+      "prediction": {
+        "answer": "",
+        "citations": [],
+        "retrieved_doc_ids": [
+          "page_032.txt",
+          "page_079.txt",
+          "page_068.txt",
+          "page_069.txt",
+          "page_039.txt",
+          "page_078.txt"
+        ],
+        "fused_scores": [
+          18.084278894452968,
+          14.592536938950664,
+          14.023414334120721,
+          13.300172340428034,
+          13.104744042430976,
+          12.967379290089319
+        ],
+        "abstained_flag": true
+      },
+      "recall_at_k": 1.0,
+      "precision_at_k": 0.16666666666666666,
+      "reciprocal_rank": 1.0,
+      "token_f1": 0.0,
+      "answered": false,
+      "citations_used": []
+    },
+    {
+      "question": "What is the capital of France?",
+      "gold_doc_ids": [],
+      "ranked_doc_ids": [
+        "page_078.txt",
+        "page_079.txt",
+        "page_047.txt",
+        "page_063.txt",
+        "page_017.txt"
+      ],
+      "answerable": false,
+      "gold_answer": "",
+      "prediction": {
+        "answer": "",
+        "citations": [],
+        "retrieved_doc_ids": [
+          "page_078.txt",
+          "page_079.txt",
+          "page_047.txt",
+          "page_063.txt",
+          "page_017.txt"
+        ],
+        "fused_scores": [
+          14.047250984332951,
+          13.44421719232064,
+          9.656525215431294,
+          6.845327914492243,
+          6.779781321129185,
+          6.751807023761726
+        ],
+        "abstained_flag": true
+      },
+      "recall_at_k": null,
+      "precision_at_k": 0.0,
+      "reciprocal_rank": 0.0,
+      "token_f1": null,
+      "answered": false,
+      "citations_used": []
+    },
+    {
+      "question": "How does photosynthesis convert sunlight into chemical energy in plants?",
+      "gold_doc_ids": [],
+      "ranked_doc_ids": [
+        "page_045.txt",
+        "page_052.txt",
+        "page_042.txt",
+        "page_014.txt",
+        "page_010.txt"
+      ],
+      "answerable": false,
+      "gold_answer": "",
+      "prediction": {
+        "answer": "",
+        "citations": [],
+        "retrieved_doc_ids": [
+          "page_045.txt",
+          "page_052.txt",
+          "page_042.txt",
+          "page_014.txt",
+          "page_010.txt"
+        ],
+        "fused_scores": [
+          7.769946549887588,
+          6.890535983882023,
+          6.707628861381337,
+          6.251973448605328,
+          5.889956877013255,
+          5.677387177377259
+        ],
+        "abstained_flag": true
+      },
+      "recall_at_k": null,
+      "precision_at_k": 0.0,
+      "reciprocal_rank": 0.0,
+      "token_f1": null,
+      "answered": false,
+      "citations_used": []
+    },
+    {
+      "question": "What is Bitcoin's maximum supply?",
+      "gold_doc_ids": [],
+      "ranked_doc_ids": [
+        "page_078.txt",
+        "page_079.txt",
+        "page_063.txt",
+        "page_071.txt",
+        "page_050.txt"
+      ],
+      "answerable": false,
+      "gold_answer": "",
+      "prediction": {
+        "answer": "",
+        "citations": [],
+        "retrieved_doc_ids": [
+          "page_078.txt",
+          "page_079.txt",
+          "page_063.txt",
+          "page_071.txt",
+          "page_050.txt"
+        ],
+        "fused_scores": [
+          10.446382543619666,
+          9.387651889507069,
+          5.874459811004097,
+          5.499555081198806,
+          4.901522389701542,
+          4.102323372188006
+        ],
+        "abstained_flag": true
+      },
+      "recall_at_k": null,
+      "precision_at_k": 0.0,
+      "reciprocal_rank": 0.0,
+      "token_f1": null,
+      "answered": false,
+      "citations_used": []
+    }
+  ]
+}

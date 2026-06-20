@@ -4,6 +4,7 @@ import json
 import argparse
 import pickle
 import re
+import time
 from pathlib import Path
 import numpy as np
 
@@ -170,9 +171,37 @@ def process_ask(question):
     )
     
     prompt = f"Context:\n{context}\n\nQuestion: {question}"
-    response = model.generate_content(prompt)
-    answer = response.text
     
+    max_retries = 3
+    response = None
+    for attempt in range(max_retries):
+        try:
+            response = model.generate_content(prompt)
+            break
+        except Exception as e:
+            error_str = str(e)
+            if "429" in error_str or "ResourceExhausted" in error_str or "quota" in error_str.lower():
+                if attempt < max_retries - 1:
+                    time.sleep(20)
+                else:
+                    return {
+                        "answer": "Generation failed due to API quota limits.",
+                        "citations": [],
+                        "abstained_flag": False,
+                        "abstained": False,
+                        "reason": "quota_exceeded",
+                        "retrieved_doc_ids": retrieved_doc_ids,
+                        "fused_scores": fused_scores
+                    }
+            else:
+                raise e
+                
+    try:
+        answer = response.text
+    except ValueError:
+        # Handle edgecase where response is blocked by safety filters
+        answer = "I cannot answer this from the provided documents."
+        
     abstained = "I cannot answer this from the provided documents." in answer
         
     citations_found = list(set(re.findall(r'\[SOURCE: (.*?)\]', answer)))
@@ -198,7 +227,9 @@ def cmd_batch(questions_file, out_file):
         questions = json.load(f)
         
     results = []
-    for q in questions:
+    for i, q in enumerate(questions):
+        if i > 0:
+            time.sleep(4)
         print(f"Processing question: {q}")
         try:
             res = process_ask(q)
